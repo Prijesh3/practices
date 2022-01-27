@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid css</title>
+    <style>
+        .grid-cointainer{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            margin-bottom: 40px;
+        }
+        .grid-cointainer>div{
+            background-color: #eee;
+            padding: 1em;
+        }
+        .grid-cointainer>div:nth-child(odd){
+            background-color: #ddd;
+        }
+        .wrapper>div{
+            background-color: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background-color: #ddd;
+
+        }
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: 1fr 3fr 1fr; */
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1em;
+            margin-bottom: 80px;
+        }
+        .area{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            grid-gap: 10px;
+            background-color:mediumblue;
+        }
+        .area >div{
+            background-color: rgb(107, 107, 184);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-cointainer">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae, tenetur ullam accusantium voluptates incidunt harum inventore consectetur hic mollitia suscipit voluptatibus ad reiciendis magnam delectus molestiae, minus sunt consequuntur modi numquam eius, praesentium ea. Blanditiis iste ut repellendus voluptatibus cupiditate accusantium nulla quam nobis debitis commodi, quod modi voluptate alias veritatis soluta incidunt? Nisi eveniet similique consequatur culpa vitae fuga temporibus saepe expedita, pariatur nemo natus voluptatibus totam sit fugiat neque itaque perspiciatis hic accusantium odio asperiores. Fuga, maxime.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, harum, cumque autem illo mollitia minus atque natus pariatur perspiciatis amet facilis quibusdam est veniam, fuga magni magnam dolore quasi quam?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae, tenetur ullam accusantium voluptates incidunt harum inventore consectetur hic mollitia suscipit voluptatibus ad reiciendis magnam delectus molestiae, minus sunt consequuntur modi numquam eius, praesentium ea. Blanditiis iste ut repellendus voluptatibus cupiditate accusantium nulla quam nobis debitis commodi, quod modi voluptate alias veritatis soluta incidunt? Nisi eveniet similique consequatur culpa vitae fuga temporibus saepe expedita, pariatur nemo natus voluptatibus totam sit fugiat neque itaque perspiciatis hic accusantium odio asperiores. Fuga, maxime.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, harum, cumque autem illo mollitia minus atque natus pariatur perspiciatis amet facilis quibusdam est veniam, fuga magni magnam dolore quasi quam?
+        </div>
+       
+        
+  
+    </div>
+
+
+
+    <div class="wrapper">
+        <div>
+            This is a grid cointainer
+        </div>
+        <div>
+            This is a grid cointainer
+        </div>
+        <div>
+            This is a grid cointainer
+        </div>
+        <div>
+            This is a grid cointainer
+        </div>
+        <div>
+            This is a grid cointainer
+        </div>
+        <div>
+            This is a grid cointainer
+        </div>
+        
+    </div>
+    <div class="area">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+</body>
+</html>

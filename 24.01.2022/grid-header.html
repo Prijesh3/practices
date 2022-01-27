@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Header</title>
+</head>
+<style>
+    .head-tag{
+        grid-area: header;
+    }
+    .header{
+        display: grid;
+        grid-template-areas: 'header header header header header';
+        padding: 10px;
+        grid-gap: 10px;
+        background-color:indigo;
+    }
+    .header>div{
+        background-color: lightblue;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="head-tag">Header</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    
+</body>
+</html>
